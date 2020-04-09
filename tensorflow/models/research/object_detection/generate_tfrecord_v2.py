@@ -1,11 +1,11 @@
 """
 Usage:
-  # From tensorflow/models/
-  # Create train data:
-  python generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=train.record
+# From tensorflow/models/
+# Create train data:
+python generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=train.record
 
-  # Create test data:
-  python generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=test.record
+# Create test data:
+python generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=test.record
 """
 from __future__ import division
 from __future__ import print_function
@@ -29,18 +29,14 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'bangus':
+    if row_label == 'tuna':
         return 1
     elif row_label == 'dalagang bukid':
         return 2
-    elif row_label == 'galunggung':
-        return 3
-    elif row_label == 'scad':
-        return 4
     elif row_label == 'tilapia':
-        return 5
-    elif row_label == 'tuna':
-        return 6
+        return 3
+    elif row_label == 'bangus':
+        return 4
     else:
         return None
 
