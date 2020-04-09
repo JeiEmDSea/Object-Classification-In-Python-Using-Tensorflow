@@ -42,17 +42,17 @@ CWD_PATH = os.getcwd()
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
 
 # Path to label map file
-PATH_TO_LABELS = os.path.join(CWD_PATH,'data','labelmap.pbtxt')
+PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 
 # Path to video
 PATH_TO_VIDEO = os.path.join(CWD_PATH,VIDEO_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 6
+NUM_CLASSES = 4
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
-# network predicts `5`, we know that this corresponds to `king`.
+# network predicts `1`, we know that this corresponds to `tuna`.
 # Here we use internal utility functions, but anything that returns a
 # dictionary mapping integers to appropriate string labels would be fine
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
