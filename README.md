@@ -114,7 +114,7 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\slim
 ```
 
-5. Your new Sytem Varialble should look like this:
+5. Your new Sytem Variable should look like this:
 
 <p align="center">
   <img src="documentation\python-path.png">
@@ -125,7 +125,7 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models; C:
 
 # Protobuf installation and .proto files compilation
 
-_The Tensorflow Object Detection API uses .proto files. These files need to be compiled into .py files in order for the Object Detection API to work properly. Google provides a programmed called Protobuf that can compile these files._
+_The Tensorflow Object Detection API uses .proto files. These files need to be compiled into .py files in order for the Object Detection API to work properly. Google provides a program called Protobuf that can compile these files._
 
 1. Download the latest **win-64** version of **Protobuf** from [this site](https://github.com/protocolbuffers/protobuf/releases).
 
@@ -145,9 +145,9 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 ```
 5. Build and Install:
 ```
-(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research> python setup.py build
+(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research>python setup.py build
 
-(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research> python setup.py install
+(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research>python setup.py install
 ```
 
 
@@ -166,9 +166,9 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\res
 C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection\images\test
 ```
 
-2. Put about **80%** of you images in the **train** folder and **20%** on the **test**.
+2. Put about **80%** of your images in the **train** folder and **20%** on the **test**.
 
-3. The images should be resized at least **800x600**. On the command-line, issue these one after another:
+3. The images should be resized to at least **800x600**. On the command-line, issue these one after another:
 ```
 cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection
 
@@ -203,7 +203,7 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\res
 
 7. A **toolbar [4]** will show up. Select the proper label then click **Ok**. You may type your own label if it's not in the list.
 
-8. Hit **Save [5]** and save the **.xml** file in the same folder as the image, the click **Next Image [6]** to go to the next photo and repeat the labeling procedure until all the images in the folder is covered.
+8. Hit **Save [5]** and save the **.xml** file in the same folder as the image, then click **Next Image [6]** to go to the next photo and repeat the labeling procedure until all the images in the folder is covered.
 
 9. Repeat the same process to all the images inside the **test** folder.
 
@@ -239,7 +239,7 @@ def class_text_to_int(row_label):
         return None
 ```
 
-5. Now issue the codes on the command-line to generate **TF Records**:
+5. Now issue these codes on the command-line to generate **TF Records**:
 ```
 python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
 
@@ -255,7 +255,7 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=image
 
 1. Navigate to the folder inside **objet_detection** called **training**.
 
-2. Genereate a new file inside the folder and name it **labelmap.pbtxt** (should not be **.txt**).
+2. Generate a new file inside the folder and name it **labelmap.pbtxt** (should not be **.txt**).
 
 3. Open the **labelmap.pbtxt** with a text editor and fill in by following this example. Place your labels according to the arrangement in the **TF Records generator script (generate_tfrecords.py)**. Save the file.
 ```
@@ -277,9 +277,9 @@ item {
 }
 ```
 
-4. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder. Rename it to **model.config**. There is already a **model.config** file existing n the folder. Do this step if you want to use configs other than **faster_rcnn_inception_v2_pets**.
+4. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder. Rename it to **model.config**. There is already a **model.config** file existing in the folder. Do this step if you want to use configs other than **faster_rcnn_inception_v2_pets**.
 
-5. Download **faster_rcnn_inception_v2_coco** from [this page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). create a folder named **model_zoo** in **object_detection** and extract the contents of the file in there.
+5. Download **faster_rcnn_inception_v2_coco** from [this page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Create a folder named **model_zoo** in **object_detection** and extract the contents of the file in there.
 
 6. Open the **model.config** in a text editor and change a few lines:
 ```
@@ -342,7 +342,7 @@ tensorboard --logdir=training
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/model.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 ```
 
-3. This will create a folder named **inference_graph** in the **object_detection** directory.
+3. This will create a folder named **inference_graph** in the **object_detection** directory. It can now be used for object detection scripts.
 
 
 
