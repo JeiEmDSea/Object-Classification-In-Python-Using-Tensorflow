@@ -1,1 +1,45 @@
+# DEFAULTS
 .vscode/settings.json
+protobuf/*
+tensorflow/models/research/build/*
+tensorflow/models/research/dist/*
+tensorflow/models/research/object_detection.egg-info/*
+tensorflow/models/research/object_detection/images/*
+tensorflow/models/research/object_detection/model_zoo/*
+tensorflow/models/research/object_detection/inference_graph/*
+
+# OBJECT_DETECTION - GENERATED ON TRAINING
+tensorflow/models/research/object_detection/__pycache__/*
+tensorflow/models/research/object_detection/anchor_generators/__pycache__/*
+tensorflow/models/research/object_detection/box_coders/__pycache__/*
+tensorflow/models/research/object_detection/builders/__pycache__/*
+tensorflow/models/research/object_detection/core/__pycache__/*
+tensorflow/models/research/object_detection/data_decoders/__pycache__/*
+tensorflow/models/research/object_detection/matchers/__pycache__/*
+tensorflow/models/research/object_detection/meta_architectures/__pycache__/*
+tensorflow/models/research/object_detection/metrics/__pycache__/*
+tensorflow/models/research/object_detection/models/__pycache__/*
+tensorflow/models/research/object_detection/models/keras_models/__pycache__/*
+tensorflow/models/research/object_detection/predictors/__pycache__/*
+tensorflow/models/research/object_detection/predictors/heads/__pycache__/*
+tensorflow/models/research/object_detection/protos/__pycache__/*
+tensorflow/models/research/object_detection/utils/__pycache__/*
+
+# SLIM - GENERATED ON TRAINING
+tensorflow/models/research/slim/nets/__pycache__/*
+tensorflow/models/research/slim/nets/mobilenet/__pycache__/*
+tensorflow/models/research/slim/nets/nasnet/__pycache__/*
+
+# TRAINING DATA
+tensorflow/models/research/object_detection/training/eval_0/*
+tensorflow/models/research/object_detection/training/*.index
+tensorflow/models/research/object_detection/training/*.meta
+tensorflow/models/research/object_detection/training/*.data*
+tensorflow/models/research/object_detection/training/*.JOHNMARKCENTENO
+tensorflow/models/research/object_detection/training/graph.pbtxt
+tensorflow/models/research/object_detection/training/checkpoint
+
+# REQUIREMENTS FOR TRAINING
+tensorflow/models/research/object_detection/training/labelmap.pbtxt
+tensorflow/models/research/object_detection/train.record
+tensorflow/models/research/object_detection/test.record
