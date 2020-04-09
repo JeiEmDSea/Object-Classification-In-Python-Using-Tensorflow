@@ -15,19 +15,19 @@ _This project will require you to have an NVDIA GPU that has at least 3.0 comput
   <img src="documentation\env-variables-search.png">
 </p>
 
-3. Click "Environment Variables" button.
+3. Click **Environment Variables** button.
 
 <p align="center">
   <img src="documentation\system-properties.png">
 </p>
 
-4. Edit the "Path" on Sytem Variables.
+4. Edit the **Path** on **Sytem Variables**.
 
 <p align="center">
   <img src="documentation\select-path.png">
 </p>
 
-5. Add these to the list then hit Ok:
+5. Add these to the list then hit **Ok**:
 
 ```
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin
@@ -36,7 +36,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\extras\CUPTI\libx64
 ```
 6. Download [cuDNN v7.6.0.64 for CUDA 10.0.](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.6.0.64/prod/10.0_20190516/cudnn-10.0-windows10-x64-v7.6.0.64.zip) You may have to setup an account for this.
 
-7. Follow this path and extract the three folders (bin, include, lib) from the cuDNN zip file you downloaded in this directory. This should merge to the same folders already inside the path:
+7. Follow this path and extract the three folders (bin, include, lib) from the **cuDNN zip file** you downloaded in this directory. This should merge to the same folders already inside the path:
 
 ```
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0
@@ -49,7 +49,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0
 
 # Anaconda installation and virtual environment setup
 
-1. Install the latest Python 3x.x version of Anaconda. You can get the installer from [this link](https://www.anaconda.com/distribution/#download-section)
+1. Install the latest **Python 3x.x** version of **Anaconda**. You can get the installer from [this link](https://www.anaconda.com/distribution/#download-section)
 
 2. Open Anaconda Prompt from start menu and create a new virtual environment by typing:
 ```
@@ -60,12 +60,12 @@ C:\>conda create -n tensorflow python=3.7
 C:\>conda activate tensorflow
 ```
 
-4. Upgrade pip with this code:
+4. Upgrade **pip** with this code:
 ```
 (tensorflow) C:\>python -m pip install --upgrade pip
 ```
 
-5. Install Tensorflow-GPU v1.15.0 on the environment by issuing:
+5. Install **Tensorflow-GPU v1.15.0** on the environment by issuing:
 ```
 (tensorflow) C:\>conda install tensorflow-gpu==1.15
 ```
@@ -80,12 +80,12 @@ C:\>conda activate tensorflow
 
 # Installing COCO API (pycocotools)
 
-1. Install git:
+1. Install **git**:
 ```
 (tensorflow) C:\>conda install git
 ```
 
-2. Install pycocotools by typing:
+2. Install **pycocotools** by typing:
 ```
 (tensorflow) C:\>pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
 ```
@@ -94,7 +94,7 @@ C:\>conda activate tensorflow
 
 # Cloning repository
 
-1. Click "Clone or Download" and "Download ZIP" to clone this repostory.
+1. Click **Clone or Download** and **Download ZIP** to clone this repostory.
 
 2. Extract the content into:
 ```
@@ -127,19 +127,19 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models; C:
 
 _The Tensorflow Object Detection API uses .proto files. These files need to be compiled into .py files in order for the Object Detection API to work properly. Google provides a programmed called Protobuf that can compile these files._
 
-1. Download the latest win-64 version of Protobuf from [this site](https://github.com/protocolbuffers/protobuf/releases).
+1. Download the latest **win-64** version of **Protobuf** from [this site](https://github.com/protocolbuffers/protobuf/releases).
 
 2. Create a new folder named **protobuf** inside this directory and extract the contents (bin, include) of the zip file you downloaded:
 ```
 C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 ```
 
-3. On your existing Anaconda command window, type in this command to navigate to the **research** folder:
+3. On your existing **Anaconda** command window, type in this command to navigate to the **research** folder:
 ```
 (tensorflow) C:\>cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research
 ```
 
-4. Compile the .protos files into .py using this command:
+4. Compile the **.protos** files into **.py** using this command:
 ```
 (tensorflow) C:\>C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\protobuf\bin\protoc.exe object_detection/protos/*.proto --python_out=.
 ```
@@ -166,9 +166,9 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\res
 C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection\images\test
 ```
 
-2. Put about 80% percent of you images in the **train** folder and 20% on the **test**.
+2. Put about **80%** of you images in the **train** folder and **20%** on the **test**.
 
-3. The images should be resized at least 800x600. On the command-line, issue these one after another:
+3. The images should be resized at least **800x600**. On the command-line, issue these one after another:
 ```
 cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection
 
@@ -182,7 +182,7 @@ python image-resize.py -d images/test/ -s 800 600
 
 # Labeling the images gathered
 
-1. Download the latest version of LabelImg for Windows from [this page](https://tzutalin.github.io/labelImg/).
+1. Download the latest version of **LabelImg** for Windows from [this page](https://tzutalin.github.io/labelImg/).
 
 2. Extract the contents into:
 ```
