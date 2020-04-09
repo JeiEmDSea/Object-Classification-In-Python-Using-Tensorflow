@@ -1,12 +1,19 @@
 # DEFAULTS
 .vscode/settings.json
+
+# REQUIREMENTS FOR TRAINING
 protobuf/*
-tensorflow/models/research/build/*
-tensorflow/models/research/dist/*
-tensorflow/models/research/object_detection.egg-info/*
 tensorflow/models/research/object_detection/images/*
 tensorflow/models/research/object_detection/model_zoo/*
 tensorflow/models/research/object_detection/inference_graph/*
+tensorflow/models/research/object_detection/training/labelmap.pbtxt
+tensorflow/models/research/object_detection/train.record
+tensorflow/models/research/object_detection/test.record
+
+# RESEARCH - GENERATED ON BUILD
+tensorflow/models/research/build/*
+tensorflow/models/research/dist/*
+tensorflow/models/research/object_detection.egg-info/*
 
 # OBJECT_DETECTION - GENERATED ON TRAINING
 tensorflow/models/research/object_detection/__pycache__/*
@@ -38,8 +45,3 @@ tensorflow/models/research/object_detection/training/*.data*
 tensorflow/models/research/object_detection/training/*.JOHNMARKCENTENO
 tensorflow/models/research/object_detection/training/graph.pbtxt
 tensorflow/models/research/object_detection/training/checkpoint
-
-# REQUIREMENTS FOR TRAINING
-tensorflow/models/research/object_detection/training/labelmap.pbtxt
-tensorflow/models/research/object_detection/train.record
-tensorflow/models/research/object_detection/test.record
