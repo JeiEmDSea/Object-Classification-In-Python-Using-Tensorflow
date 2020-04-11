@@ -72,7 +72,7 @@ C:\>conda activate tensorflow
 
 6. Install necessary dependencies by typing:
 ```
-(tensorflow) C:\>pip install pillow lxml Cython contextlib2 jupyter matplotlib pandas opencv-python numpy==1.17.4
+(tensorflow) C:\>pip install pillow lxml Cython contextlib2 jupyter matplotlib pandas opencv-python imutils numpy==1.17.4
 ```
 
 
@@ -351,7 +351,7 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 
 1. Open the **object_detection_webcam.py** on the **object_detection** folder and modify the line according to the number of objects you're classifying:
 ```
-[line 48] NUM_CLASSES = 4
+[line 26] NUM_CLASSES = 4
 ```
 
 2. To use your a camera attached to your computer, execute this in the **object_detection** directory:
@@ -359,4 +359,11 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 python object_detection_webcam.py
 ```
 
-3. A window will pop-up showing your camera feed. Any object that the **neural network** is trained to classify will be enclosed in a box with the corresponding label and percentage of confidence.
+3. A window will pop-up showing your camera feed. Any object that the **neural network** is trained to classify will be enclosed in a box with the corresponding label and percentage of confidence. Press "q" to quit
+
+4. To use a pre-recorded video, put the video in the **object_detection** directory and set the filename in the **object_detection_app.py** at line 30 thenrun the command:
+```
+[line 30] VIDEO_NAME = 'test.mov'
+
+python object_detection_webcam.py --mode 1
+```
