@@ -3,45 +3,45 @@
 
 # REQUIREMENTS FOR TRAINING
 protobuf/*
-tensorflow/models/research/object_detection/images/*
-tensorflow/models/research/object_detection/model_zoo/*
-tensorflow/models/research/object_detection/inference_graph/*
-tensorflow/models/research/object_detection/training/labelmap.pbtxt
-tensorflow/models/research/object_detection/train.record
-tensorflow/models/research/object_detection/test.record
+object_detection/images/*
+object_detection/model_zoo/*
+object_detection/inference_graph/*
+object_detection/protos/*.py
+object_detection/train.record
+object_detection/test.record
 
 # RESEARCH - GENERATED ON BUILD
-tensorflow/models/research/build/*
-tensorflow/models/research/dist/*
-tensorflow/models/research/object_detection.egg-info/*
+build/*
+dist/*
+object_detection.egg-info/*
 
 # OBJECT_DETECTION - GENERATED ON TRAINING
-tensorflow/models/research/object_detection/__pycache__/*
-tensorflow/models/research/object_detection/anchor_generators/__pycache__/*
-tensorflow/models/research/object_detection/box_coders/__pycache__/*
-tensorflow/models/research/object_detection/builders/__pycache__/*
-tensorflow/models/research/object_detection/core/__pycache__/*
-tensorflow/models/research/object_detection/data_decoders/__pycache__/*
-tensorflow/models/research/object_detection/matchers/__pycache__/*
-tensorflow/models/research/object_detection/meta_architectures/__pycache__/*
-tensorflow/models/research/object_detection/metrics/__pycache__/*
-tensorflow/models/research/object_detection/models/__pycache__/*
-tensorflow/models/research/object_detection/models/keras_models/__pycache__/*
-tensorflow/models/research/object_detection/predictors/__pycache__/*
-tensorflow/models/research/object_detection/predictors/heads/__pycache__/*
-tensorflow/models/research/object_detection/protos/__pycache__/*
-tensorflow/models/research/object_detection/utils/__pycache__/*
+object_detection/__pycache__/*
+object_detection/anchor_generators/__pycache__/*
+object_detection/box_coders/__pycache__/*
+object_detection/builders/__pycache__/*
+object_detection/core/__pycache__/*
+object_detection/data_decoders/__pycache__/*
+object_detection/matchers/__pycache__/*
+object_detection/meta_architectures/__pycache__/*
+object_detection/metrics/__pycache__/*
+object_detection/models/__pycache__/*
+object_detection/models/keras_models/__pycache__/*
+object_detection/predictors/__pycache__/*
+object_detection/predictors/heads/__pycache__/*
+object_detection/protos/__pycache__/*
+object_detection/utils/__pycache__/*
 
 # SLIM - GENERATED ON TRAINING
-tensorflow/models/research/slim/nets/__pycache__/*
-tensorflow/models/research/slim/nets/mobilenet/__pycache__/*
-tensorflow/models/research/slim/nets/nasnet/__pycache__/*
+slim/nets/__pycache__/*
+slim/nets/mobilenet/__pycache__/*
+slim/nets/nasnet/__pycache__/*
 
 # TRAINING DATA
-tensorflow/models/research/object_detection/training/eval_0/*
-tensorflow/models/research/object_detection/training/*.index
-tensorflow/models/research/object_detection/training/*.meta
-tensorflow/models/research/object_detection/training/*.data*
-tensorflow/models/research/object_detection/training/*.JOHNMARKCENTENO
-tensorflow/models/research/object_detection/training/graph.pbtxt
-tensorflow/models/research/object_detection/training/checkpoint
+object_detection/training/eval_0/*
+object_detection/training/*.index
+object_detection/training/*.meta
+object_detection/training/*.data*
+object_detection/training/*.JOHNMARKCENTENO
+object_detection/training/graph.pbtxt
+object_detection/training/checkpoint
