@@ -111,7 +111,7 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 
 4. Create a new System Variable called **PYTHONPATH** with these values:
 ```
-C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\slim
+C:\GitHub\Object-Classification-In-Python-Using-Tensorflow; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\slim
 ```
 
 5. Your new Sytem Variable should look like this:
@@ -136,7 +136,7 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 
 3. On your existing **Anaconda** command window, type in this command to navigate to the **research** folder:
 ```
-(tensorflow) C:\>cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research
+(tensorflow) C:\>cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 ```
 
 4. Compile the **.protos** files into **.py** using this command:
@@ -145,9 +145,9 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 ```
 5. Build and Install:
 ```
-(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research>python setup.py build
+(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow>python setup.py build
 
-(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research>python setup.py install
+(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow>python setup.py install
 ```
 
 
@@ -161,16 +161,16 @@ _You can use your phone to take pictures of the objects or download images of th
 
 1. Create these two folders:
 ```
-C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection\images\train
+C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection\images\train
 
-C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection\images\test
+C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection\images\test
 ```
 
 2. Put about **80%** of your images in the **train** folder and **20%** on the **test**.
 
 3. The images should be resized to at least **800x600**. On the command-line, issue these one after another:
 ```
-cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection
+cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection
 
 python image-resize.py -d images/train/ -s 800 600
 
@@ -186,7 +186,7 @@ python image-resize.py -d images/test/ -s 800 600
 
 2. Extract the contents into:
 ```
-C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection\images
+C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection\images
 ```
 
 3. Update the **predefined_classes.txt** inside the **data** folder according to the obects you're going to work with.
@@ -212,31 +212,31 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\res
 
 # Generating TF Records for training
 
-1. Go to the **object_detection** folder on the terminal:
+1. Go to the **object_detection** folder on the terminal by usinf this command:
 ```
-cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection
+cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection
 ```
 
 2. Transform the **.xml** files in the **train** and **test** folders by executing the **xml_to_csv.py**:
 ```
-(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow>python xml_to_csv.py
+(tensorflow) C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection>python xml_to_csv.py
 ```
 
 3. This will generate **test_labels.csv** and **train_labels.csv** inside the **images** folder.
 
 4. Update the **class_text_to_int()** class at **line 31** inside the **generate_tfrecords.py** according to the labels you used. In this case:
 ```
-def class_text_to_int(row_label):
-    if row_label == 'tuna':
-        return 1
-    elif row_label == 'dalagang bukid':
-        return 2
-    elif row_label == 'tilapia':
-        return 3
-    elif row_label == 'bangus':
-        return 4
-    else:
-        return None
+[line 31]   def class_text_to_int(row_label):
+              if row_label == 'tuna':
+                  return 1
+              elif row_label == 'dalagang bukid':
+                  return 2
+              elif row_label == 'tilapia':
+                  return 3
+              elif row_label == 'bangus':
+                  return 4
+              else:
+                  return None
 ```
 
 5. Now issue these codes on the command-line to generate **TF Records**:
@@ -255,9 +255,9 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=image
 
 1. Navigate to the folder inside **objet_detection** called **training**.
 
-2. Generate a new file inside the folder and name it **labelmap.pbtxt** (should not be **.txt**).
+2. Open the **labelmap.pbtxt** with a text editor.
 
-3. Open the **labelmap.pbtxt** with a text editor and fill in by following this example. Place your labels according to the arrangement in the **TF Records generator script (generate_tfrecords.py)**. Save the file.
+3. Fill in by following this example. Place your labels according to the arrangement in the **TF Records generator script (generate_tfrecords.py)**. Save the file.
 ```
 item {
     id: 1
@@ -277,23 +277,23 @@ item {
 }
 ```
 
-4. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder. Rename it to **model.config**. There is already a **model.config** file existing in the folder. Do this step if you want to use configs other than **faster_rcnn_inception_v2_pets**.
+4. Download **faster_rcnn_inception_v2_coco** from [this page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Create a folder named **model_zoo** in **object_detection** and extract the contents of the file in there.
 
-5. Download **faster_rcnn_inception_v2_coco** from [this page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Create a folder named **model_zoo** in **object_detection** and extract the contents of the file in there.
+5. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder. Rename it to **model.config**. There is already a **model.config** file existing in the folder. Do this step if you want to use configs other than **faster_rcnn_inception_v2_pets**.
 
 6. Open the **model.config** in a text editor and change a few lines:
 ```
-[line 009] num_classes: 4     *change the value according to the number of objects you're working with.
+[line 009]    num_classes: 4    *change the value according to the number of objects you're working with.
 
-[line 106] fine_tune_checkpoint: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/model_zoo/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
+[line 106]    fine_tune_checkpoint: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/model_zoo/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
 
-[line 123] input_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/train.record"
+[line 123]    input_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/train.record"
 
-[line 135] input_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/test.record"
+[line 135]    input_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/test.record"
 
-[line 125] [line 137] label_map_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/training/labelmap.pbtxt"
+[line 125] [line 137]   label_map_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/tensorflow/models/research/object_detection/training/labelmap.pbtxt"
 
-[line 130] num_examples: 8      *change the value according to the numbers of images inside the images/test folder.
+[line 130]    num_examples: 8   *change the value according to the numbers of images inside the images/test folder.
 ```
 
 7. Save the file. Training is now configured.
@@ -305,7 +305,7 @@ item {
 
 1. From the **object_detection** directory, issue the following command:
 ```
-set PYTHONPATH=C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\slim; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\tensorflow\models\research\object_detection
+set PYTHONPATH=C:\GitHub\Object-Classification-In-Python-Using-Tensorflow; C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\object_detection;C:\GitHub\Object-Classification-In-Python-Using-Tensorflow\slim
 ```
 
 2. This command should be run everytime the **tensorflow virtual environment** is started. You don't have to do this though if you already have **5th step** on **Cloning the repository**.
@@ -349,21 +349,28 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 
 # Using the object detector
 
-1. Open the **object_detection_webcam.py** on the **object_detection** folder and modify the line according to the number of objects you're classifying:
+1. Open the **object_detection_app.py** on the **object_detection** folder and modify the line according to the number of objects you're classifying:
 ```
-[line 26] NUM_CLASSES = 4
+[line 26]   NUM_CLASSES = 4
 ```
 
 2. To use your a camera attached to your computer, execute this in the **object_detection** directory:
 ```
-python object_detection_webcam.py
+python object_detection_app.py
 ```
 
 3. A window will pop-up showing your camera feed. Any object that the **neural network** is trained to classify will be enclosed in a box with the corresponding label and percentage of confidence. Press "q" to quit
 
-4. To use a pre-recorded video, put the video in the **object_detection** directory and set the filename in the **object_detection_app.py** at line 30 thenrun the command:
+4. To use a pre-recorded video, put the video in the **object_detection** directory and set the filename in the **object_detection_app.py** at line 30 then run the command:
 ```
-[line 30] VIDEO_NAME = 'test.mov'
+[line 30]   VIDEO_NAME = 'test.mov'
 
-python object_detection_webcam.py --mode 1
+python object_detection_app.py --mode 1
+```
+
+5. To use a single image, put the file in the **object_detection** directory and set the filename in the **object_detection_app.py** at line 29 then run the command:
+```
+[line 29]   IMAGE_NAME = 'test.jpg'
+
+python object_detection_app.py --mode 2
 ```
