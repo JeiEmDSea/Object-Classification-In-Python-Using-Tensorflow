@@ -1,5 +1,5 @@
 # DEFAULTS
-.vscode/settings.json
+.vscode/*
 
 # REQUIREMENTS FOR TRAINING
 protobuf/*
