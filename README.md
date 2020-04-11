@@ -1,6 +1,8 @@
 # **OBJECT CLASSIFICATION IN PYTHON USING TENSORFLOW**
 
-_A Python 3.7 program that uses Tensorflow-GPU 1.15 to classify objects on images/videos._
+_A Python 3.7 project that uses Tensorflow-GPU 1.15 to classify objects on images/videos._
+
+_The guide is based from [EdjeElectronics turorial for training TensorFlow Object Detection Classifier for multiple object detection on Windows](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn) which was derived from [TensorFlow object detection API repositry](https://github.com/tensorflow/models/tree/master/research/object_detection)._
 
 _This project will require you to have an NVDIA GPU that has at least 3.0 compute capability. Refer to [this link](https://en.wikipedia.org/wiki/CUDA) to check the supported CUDA level of your GPU. This project will be using Tensorflow v1.15 which requires CUDA v10.0 & cuDNN v7.6._
 
@@ -134,7 +136,7 @@ _The Tensorflow Object Detection API uses .proto files. These files need to be c
 C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 ```
 
-3. On your existing **Anaconda** command window, type in this command to navigate to the **research** folder:
+3. On your existing **Anaconda** command window, type in this command to navigate to the project folder:
 ```
 (tensorflow) C:\>cd C:\GitHub\Object-Classification-In-Python-Using-Tensorflow
 ```
