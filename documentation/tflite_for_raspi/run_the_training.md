@@ -9,7 +9,7 @@ conda activate tensorflow
 
 2. To start the training, execute this command:
 ```
-python model_main.py --logtostderr –train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config
+python model_main.py --logtostderr --model_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config
 ```
 
 3. If everything is setup correctly, the training will begin shortly and run continously without errors. It should look like this:

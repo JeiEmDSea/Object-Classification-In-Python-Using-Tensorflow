@@ -12,11 +12,11 @@
 
 4. Make sure the following items have been completed:
 
-    + proto files in \object_detection\protos have been generated
-    + train and test images and their XML label files are placed in the \object_detection\images\train and \object_detection\images\test folders
-    + train_labels.csv and test_labels.csv have been generated and are located in the \object_detection\images folder
-    + train.record and test.record have been generated and are located in the \object_detection folder
-    + labelmap.pbtxt file has been created and is located in the \object_detection\training folder
+    + proto files in object_detection\protos have been generated
+    + train and test images and their XML label files are placed in the object_detection\images\train and object_detection\images\test folders
+    + train_labels.csv and test_labels.csv have been generated and are located in the object_detection\images folder
+    + train.record and test.record have been generated and are located in the object_detection folder
+    + labelmap.pbtxt file has been created and is located in the object_detection\training folder
 
     **Parts 5-9** of the first section of this guide shows how to do these.
 
@@ -26,7 +26,7 @@
 ```
 [line 009]  num_classes: 4    *change the value according to the number of objects you're working with
 
-[line 141]  batch_size: 8     *twice the number of classes. the smaller batch size will prevent OOM (Out of Memory) errors during training
+[line 141]  batch_size: 4     *the smaller batch size will prevent OOM (Out of Memory) errors during training
 
 [line 156]  fine_tune_checkpoint: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/object_detection/model_zoo/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03/model.ckpt"
 

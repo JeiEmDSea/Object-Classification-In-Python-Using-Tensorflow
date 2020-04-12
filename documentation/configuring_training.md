@@ -24,15 +24,17 @@ item {
 }
 ```
 
-4. Download **faster_rcnn_inception_v2_coco** from [this page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Create a folder named **model_zoo** in **object_detection** and extract the contents of the compressed file you downloaded in there.
+4. Go to the second section of this guide **"Training a Tensorflow Lite model for RasperryPi"** if you're going to train a model for **RaspberryPi**. Continue to the next steps otherwise.
+
+5. Download **faster_rcnn_inception_v2_coco** from [this page](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Create a folder named **model_zoo** in **object_detection** and extract the contents of the compressed file you downloaded in there.
 
 <p align="center">
   <img src="images\extract-faster-rcnn-inception.png">
 </p>
 
-5. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder.
+6. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder.
 
-6. Open the **faster_rcnn_inception_v2_pets.config** in a text editor and change a few lines:
+7. Open the **faster_rcnn_inception_v2_pets.config** in a text editor and change a few lines:
 ```
 [line 009]    num_classes: 4    *change the value according to the number of objects you're working with.
 
@@ -47,7 +49,7 @@ item {
 [line 125] [line 137]   label_map_path: "C:/GitHub/Object-Classification-In-Python-Using-Tensorflow/object_detection/training/labelmap.pbtxt"
 ```
 
-7. Save the file. Training is now configured.
+8. Save the file. Training is now configured.
 
 <br>
 <p align="center">
