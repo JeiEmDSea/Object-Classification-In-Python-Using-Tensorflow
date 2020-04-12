@@ -7,6 +7,7 @@ object_detection/images/*
 object_detection/model_zoo/*
 object_detection/inference_graph/*
 object_detection/protos/*.py
+object_detection/training/*.config
 object_detection/train.record
 object_detection/test.record
 

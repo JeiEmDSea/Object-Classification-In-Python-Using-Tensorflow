@@ -30,9 +30,9 @@ item {
   <img src="images\extract-faster-rcnn-inception.png">
 </p>
 
-5. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder. Rename it to **model.config**. There is already a **model.config** file existing in the folder. Do this step if you want to use configs other than **faster_rcnn_inception_v2_pets**.
+5. Navigate to the **samples/configs** folder and copy the **faster_rcnn_inception_v2_pets.config** into the **training** folder.
 
-6. Open the **model.config** in a text editor and change a few lines:
+6. Open the **faster_rcnn_inception_v2_pets.config** in a text editor and change a few lines:
 ```
 [line 009]    num_classes: 4    *change the value according to the number of objects you're working with.
 

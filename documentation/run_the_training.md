@@ -7,7 +7,7 @@ set PYTHONPATH=C:\GitHub\Object-Classification-In-Python-Using-Tensorflow; C:\Gi
 
 2. To start the training, execute this command:
 ```
-python model_main.py --logtostderr --model_dir=training/ --pipeline_config_path=training/model.config
+python model_main.py --logtostderr --model_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
 
 3. If everything is setup correctly, the training will begin shortly and run continously without errors. It should look like this:
