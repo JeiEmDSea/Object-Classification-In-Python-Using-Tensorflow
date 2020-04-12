@@ -40,7 +40,7 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=image
 <p align="center">
   <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/labeling_the_images_gathered.md">Previous</a>
   <span>•</span>
-  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow">Home</a>
   <span>•</span>
   <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/configuring_training.md">Next</a>
 </p>

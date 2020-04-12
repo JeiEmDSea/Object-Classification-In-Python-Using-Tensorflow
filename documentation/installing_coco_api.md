@@ -16,7 +16,7 @@ pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&sub
 <p align="center">
   <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/anaconda_installation_and_virtual_environment_setup.md">Previous</a>
   <span>•</span>
-  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow">Home</a>
   <span>•</span>
   <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/cloning_repository.md">Next</a>
 </p>

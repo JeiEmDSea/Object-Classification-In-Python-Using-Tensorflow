@@ -44,7 +44,7 @@ pip install pillow lxml Cython contextlib2 jupyter matplotlib pandas opencv-pyth
 <p align="center">
   <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/cuda_and_cudnn_setup_and_environment_variables_setup.md">Previous</a>
   <span>•</span>
-  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow">Home</a>
   <span>•</span>
   <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/installing_coco_api.md">Next</a>
 </p>
