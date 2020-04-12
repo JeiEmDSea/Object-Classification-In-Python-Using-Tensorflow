@@ -51,9 +51,9 @@ item {
 
 <br>
 <p align="center">
-  <a href="generating_tf_records_for_training.md">Previous</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/generating_tf_records_for_training.md">Previous</a>
   <span>•</span>
-  <a href="../README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
   <span>•</span>
-  <a href="run_the_training.md">Next</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/run_the_training.md">Next</a>
 </p>

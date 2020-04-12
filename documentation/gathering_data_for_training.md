@@ -26,9 +26,9 @@ python image-resize.py -d images/test/ -s 800 600
 
 <br>
 <p align="center">
-  <a href="protobuf_installation_and_proto_files_compilation.md">Previous</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/protobuf_installation_and_proto_files_compilation.md">Previous</a>
   <span>•</span>
-  <a href="../README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
   <span>•</span>
-  <a href="labeling_the_images_gathered.md">Next</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/labeling_the_images_gathered.md">Next</a>
 </p>

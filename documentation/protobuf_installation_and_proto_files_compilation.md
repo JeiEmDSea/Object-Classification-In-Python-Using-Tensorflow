@@ -31,9 +31,9 @@ python setup.py install
 
 <br>
 <p align="center">
-  <a href="cloning_repository.md">Previous</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/cloning_repository.md">Previous</a>
   <span>•</span>
-  <a href="../README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
   <span>•</span>
-  <a href="gathering_data_for_training.md">Next</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/gathering_data_for_training.md">Next</a>
 </p>

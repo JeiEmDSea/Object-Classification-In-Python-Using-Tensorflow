@@ -31,9 +31,9 @@ tensorboard --logdir=training
 
 <br>
 <p align="center">
-  <a href="configuring_training.md">Previous</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/configuring_training.md">Previous</a>
   <span>•</span>
-  <a href="../README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
   <span>•</span>
-  <a href="exporting_inference_graph.md">Next</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/exporting_inference_graph.md">Next</a>
 </p>

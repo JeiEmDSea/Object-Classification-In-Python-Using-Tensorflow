@@ -36,9 +36,9 @@ C:\GitHub\Object-Classification-In-Python-Using-Tensorflow; C:\GitHub\Object-Cla
 
 <br>
 <p align="center">
-  <a href="installing_coco_api.md">Previous</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/installing_coco_api.md">Previous</a>
   <span>•</span>
-  <a href="../README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
   <span>•</span>
-  <a href="protobuf_installation_and_proto_files_compilation.md">Next</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/protobuf_installation_and_proto_files_compilation.md">Next</a>
 </p>

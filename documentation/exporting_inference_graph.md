@@ -15,9 +15,9 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 
 <br>
 <p align="center">
-  <a href="run_the_training.md">Previous</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/run_the_training.md">Previous</a>
   <span>•</span>
-  <a href="../README.md">Home</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/README.md">Home</a>
   <span>•</span>
-  <a href="using_the_object_detector.md">Next</a>
+  <a href="https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/using_the_object_detector.md">Next</a>
 </p>

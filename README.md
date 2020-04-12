@@ -9,26 +9,26 @@ _This project will require you to have an NVDIA GPU that has at least 3.0 comput
 
 
 ## **This guide will go through a series of steps:**
-1. [CUDA and cuDNN setup and environment variables setup](documentation\cuda_and_cudnn_setup_and_environment_variables_setup.md)
+1. [CUDA and cuDNN setup and environment variables setup](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/cuda_and_cudnn_setup_and_environment_variables_setup.md)
 
-2. [Anaconda installation and virtual environment setup](documentation\anaconda_installation_and_virtual_environment_setup.md)
+2. [Anaconda installation and virtual environment setup](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/anaconda_installation_and_virtual_environment_setup.md)
 
-3. [Installing COCO API (pycocotools)](documentation\installing_coco_api.md)
+3. [Installing COCO API (pycocotools)](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/installing_coco_api.md)
 
-4. [Cloning repository](documentation\cloning_repository.md)
+4. [Cloning repository](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/cloning_repository.md)
 
-5. [Protobuf installation and .proto files compilation](documentation\protobuf_installation_and_proto_files_compilation.md)
+5. [Protobuf installation and .proto files compilation](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/protobuf_installation_and_proto_files_compilation.md)
 
-6. [Gathering data for training](documentation\gathering_data_for_training.md)
+6. [Gathering data for training](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/gathering_data_for_training.md)
 
-7. [Labeling the images gathered](documentation\labeling_the_images_gathered.md)
+7. [Labeling the images gathered](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/labeling_the_images_gathered.md)
 
-8. [Generating TF Records for training](documentation\generating_tf_records_for_training.md)
+8. [Generating TF Records for training](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/generating_tf_records_for_training.md)
 
-9. [Configuring training](documentation\configuring_training.md)
+9. [Configuring training](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/configuring_training.md)
 
-10. [Run the training](documentation\run_the_training.md)
+10. [Run the training](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/run_the_training.md)
 
-11. [Exporting inference graph](documentation\exporting_inference_graph.md)
+11. [Exporting inference graph](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/exporting_inference_graph.md)
 
-12. [Using the object detector](documentation\using_the_object_detector.md)
+12. [Using the object detector](https://github.com/JeiEmDSea/Object-Classification-In-Python-Using-Tensorflow/blob/master/documentation/using_the_object_detector.md)
