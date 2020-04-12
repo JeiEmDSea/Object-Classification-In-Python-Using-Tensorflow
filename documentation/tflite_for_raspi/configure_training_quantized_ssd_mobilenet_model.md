@@ -1,14 +1,8 @@
 # Configure Training Quantized SSD-MobileNet Model
 
-1. We’ll use transfer learning to train a “quantized” SSD-MobileNet model. Quantized models use 8-bit integer values instead of 32-bit floating values within the neural network, allowing them to run much more efficiently on GPUs or specialized TPUs (TensorFlow Processing Units).
-<br>
-<br>
-You can also use a standard **SSD-MobileNet model V1 or V2**, but it will not run quite as fast as the quantized model. Also, you will not be able to run it on the Google Coral TPU Accelerator.
+1. We’ll use transfer learning to train a “quantized” SSD-MobileNet model. Quantized models use 8-bit integer values instead of 32-bit floating values within the neural network, allowing them to run much more efficiently on GPUs or specialized TPUs (TensorFlow Processing Units). You can also use a standard **SSD-MobileNet model V1 or V2**, but it will not run quite as fast as the quantized model. Also, you will not be able to run it on the Google Coral TPU Accelerator.
 
-2. Google provides several quantized object detection models in their [detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). This tutorial will use the SSD-MobileNet-V2-Quantized-COCO model. Download the model [here](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz).
-<br>
-<br>
-**Note: TensorFlow Lite does NOT support RCNN models such as Faster-RCNN! It only supports SSD models.**
+2. Google provides several quantized object detection models in their [detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). This tutorial will use the SSD-MobileNet-V2-Quantized-COCO model. Download the model [here](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz). **Note: TensorFlow Lite does NOT support RCNN models such as Faster-RCNN! It only supports SSD models.**
 
 3. Extract the downloaded compressed file inside the **model_zoo** folder.
 
