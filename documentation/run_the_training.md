@@ -16,7 +16,7 @@ python model_main.py --logtostderr --model_dir=training/ --pipeline_config_path=
   <img src="images\terminal-training.png">
 </p>
 
-4. Open a new open a new **Anaconda Prompt** and issue these commands to activate **TENSORBOARD**:
+4. Open a new **Anaconda Prompt** and issue these commands to activate **TENSORBOARD**:
 ```
 conda activate tensorflow
 
